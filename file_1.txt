@@ -1,0 +1,2 @@
+This is the first file for git repository
+Adding this line to make a change in it
