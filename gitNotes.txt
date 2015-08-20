@@ -1,37 +1,55 @@
-# OS Windows
-# shell git-bash
+## git and github setup *Begin* ##
 
-## git and github setup *Begin*
-
-step 1 : create a dir to hold git projects which in git terms known as repositories
-step 2 : initialize the directory by first going to the repo dir and issue git init
-step 3 : create a github account and a repository
-step 4 : create ssh keys ssh-keygen -t rsa -C "youremailaddress" and follow instruc.
-step 5 : copy public key clip < ~/.ssh/id_rsa.pub
-step 6 : logon to github (if not already) click your profile icon on top right
+step 1  create a dir to hold git projects which in git terms known as repositories
+step 2  initialize the directory by first going to the repo dir and issue git init
+step 3  create a github account and a repository
+step 4  create ssh keys ssh-keygen -t rsa -C "youremailaddress" and follow instruc.
+step 5  copy public key clip < ~/.ssh/id_rsa.pub
+step 6  logon to github (if not already) click your profile icon on top right
 	 and choose settings from the menu
-step 7 : click ssh keys from the column on the left
-step 8 : click add key, give it a description and paste the key, save it
-step 9 : test key-based access to github from git-bash git -T git@github.com
+step 7  click ssh keys from the column on the left
+step 8  click add key, give it a description and paste the key, save it
+step 9  test key-based access to github from git-bash git -T git@github.com
 	 at this stage, you should be prompted for password
 
-## git and github setup *Done*
+## git and github setup *Done* ##
 
-## git command-line *Begin*
-#  Some useful commands applicable to local git repo are:
+## git command-line *Begin* ##
+#  Some useful commands applicable to local git repo are
 
-git status : to see any changes that may need att. b/w working, staged, repo areas
-git add <filename>|. : add changed file(s) from working to staged area
-git commit -m "<comment>" : commit changes with a comment from staged to repo area
-			    aka creating snapshot
-git commit -am "<comment>": move file from working to repo aka cold commit
-git log : list all the snapshots
-git reset HEAD <filename> : undo any changes made from working to staged area
-git checkout -- <filename> : restore file from repo to working area
-git checkout <checkout ref> -- <filename> : restore a file from snapshot
+# line 1  command
+# line 2 what it does
+ 
+git status  
+to see any changes that may need att. b/w working, staged, repo areas
 
-## git command-line *Done*
+git add <filename>|.  
+add changed file(s) from working to staged area
+
+git commit -m "<comment>"  
+commit changes with a comment from staged to repo area aka creating snapshot
+
+git commit -am "<comment>" 
+move file from working to repo aka cold commit
+
+git log  
+list all the snapshots
+
+git reset HEAD <filename>  
+undo any changes made from working to staged area
+
+git checkout -- <filename>  
+restore file from repo to working area
+
+git checkout <checkout ref> -- <filename>  
+restore a file from snapshot
+
+## git command-line *Done* ##
 
 ## commands to interact with github or any other git server
 
-git clone git@github.com:<your_git_username>/<repo_u_wanna_clone> : clone a repo from git server to your computer locally
+git remote add <alias to repo url> <github repo url>
+adds remote repo as any alias name you have used. As a standard "origin" alias is used
+
+git clone git@github.com:<your_git_username>/<repo_u_wanna_clone>  
+clone a repo from git server to your computer locally
