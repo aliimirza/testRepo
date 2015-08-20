@@ -1,4 +1,4 @@
-## git and github setup *Begin* ##
+## SECTION 1 git and github setup *Begin* ##
 
 step 1  create a dir to hold git projects which in git terms known as repositories
 step 2  initialize the directory by first going to the repo dir and issue git init
@@ -14,7 +14,7 @@ step 9  test key-based access to github from git-bash git -T git@github.com
 
 ## git and github setup *Done* ##
 
-## git command-line *Begin* ##
+## SECTION 2 git command-line *Begin* ##
 #  Some useful commands applicable to local git repo are
 
 # line 1  command
@@ -46,7 +46,7 @@ restore a file from snapshot
 
 ## git command-line *Done* ##
 
-## commands to interact with github or any other git server
+## SECTION 3 commands to interact with github or any other git server
 
 git remote add <alias to repo url> <github repo url>
 adds remote repo as any alias name you have used. As a standard "origin" alias is used
