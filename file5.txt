@@ -1,0 +1,2 @@
+Created a new file after cloning testRepo from github.
+Later, I will push this file on to github
